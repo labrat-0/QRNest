@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QR Nest</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="lib/spectrum.min.css">
+  <script src="init.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>QR Nest</h1>
+      <div class="header-actions">
+        <button id="settingsButton" class="icon-button" title="Settings">
+          <span class="material-icons">settings</span>
+        </button>
+        <button id="themeToggle" class="icon-button" title="Toggle Theme">
+          <span class="material-icons">dark_mode</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="tab-navigation">
+      <button class="tab-nav-item active" data-tab="url">
+        <span class="material-icons">link</span>
+        URL
+      </button>
+      <button class="tab-nav-item" data-tab="text">
+        <span class="material-icons">text_fields</span>
+        Text
+      </button>
+      <button class="tab-nav-item" data-tab="wifi">
+        <span class="material-icons">wifi</span>
+        Wi-Fi
+      </button>
+      <button class="tab-nav-item" data-tab="contact">
+        <span class="material-icons">person</span>
+        Contact
+      </button>
+      <button class="tab-nav-item" data-tab="email">
+        <span class="material-icons">email</span>
+        Email
+      </button>
+      <button class="tab-nav-item" data-tab="sms">
+        <span class="material-icons">sms</span>
+        SMS
+      </button>
+    </div>
+
+    <!-- URL Tab Content -->
+    <div class="tab-content active" id="urlTab">
+      <div class="input-group">
+        <label for="url">URL</label>
+        <input type="text" id="url" placeholder="Paste URL here" autocomplete="off" />
+      </div>
+    </div>
+
+    <!-- Text Tab Content -->
+    <div class="tab-content" id="textTab">
+      <div class="input-group">
+        <label for="plainText">Text</label>
+        <textarea id="plainText" placeholder="Enter text here" rows="3"></textarea>
+      </div>
+    </div>
+
+    <!-- Wi-Fi Tab Content -->
+    <div class="tab-content" id="wifiTab">
+      <div class="input-group">
+        <label for="wifiSsid">Network Name (SSID)</label>
+        <input type="text" id="wifiSsid" placeholder="SSID" />
+      </div>
+      <div class="input-group">
+        <label for="wifiPassword">Password</label>
+        <div class="password-input">
+          <input type="password" id="wifiPassword" placeholder="Password" />
+          <button id="toggleWifiPassword" class="icon-button" title="Show/Hide Password">
+            <span class="material-icons">visibility</span>
+          </button>
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="wifiEncryption">Encryption Type</label>
+        <select id="wifiEncryption">
+          <option value="WPA">WPA/WPA2/WPA3</option>
+          <option value="WEP">WEP</option>
+          <option value="nopass">None</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="wifiHidden">Hidden Network</label>
+        <div class="toggle-switch">
+          <input type="checkbox" id="wifiHidden" />
+          <span class="toggle-slider"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Tab Content -->
+    <div class="tab-content" id="contactTab">
+      <div class="input-group">
+        <label for="contactName">Name</label>
+        <input type="text" id="contactName" placeholder="Full Name" />
+      </div>
+      <div class="input-group">
+        <label for="contactEmail">Email</label>
+        <input type="email" id="contactEmail" placeholder="Email" />
+      </div>
+      <div class="input-group">
+        <label for="contactPhone">Phone</label>
+        <input type="tel" id="contactPhone" placeholder="Phone Number" />
+      </div>
+      <div class="input-group">
+        <label for="contactAddress">Address</label>
+        <input type="text" id="contactAddress" placeholder="Address" />
+      </div>
+      <div class="input-group">
+        <label for="contactWebsite">Website</label>
+        <input type="text" id="contactWebsite" placeholder="Website" />
+      </div>
+    </div>
+
+    <!-- Email Tab Content -->
+    <div class="tab-content" id="emailTab">
+      <div class="input-group">
+        <label for="emailAddress">Email Address</label>
+        <input type="email" id="emailAddress" placeholder="recipient@example.com" />
+      </div>
+      <div class="input-group">
+        <label for="emailSubject">Subject</label>
+        <input type="text" id="emailSubject" placeholder="Email Subject" />
+      </div>
+      <div class="input-group">
+        <label for="emailBody">Message</label>
+        <textarea id="emailBody" placeholder="Email body" rows="3"></textarea>
+      </div>
+    </div>
+
+    <!-- SMS Tab Content -->
+    <div class="tab-content" id="smsTab">
+      <div class="input-group">
+        <label for="smsNumber">Phone Number</label>
+        <input type="tel" id="smsNumber" placeholder="Phone Number" />
+      </div>
+      <div class="input-group">
+        <label for="smsMessage">Message</label>
+        <textarea id="smsMessage" placeholder="SMS message" rows="3"></textarea>
+      </div>
+    </div>
+    
+    <div class="button-group">
+      <button id="generateQR" class="primary-button">
+        <span class="material-icons">qr_code</span>
+        Generate QR Code
+      </button>
+      <button id="customizeQR" class="secondary-button">
+        <span class="material-icons">palette</span>
+        Customize
+      </button>
+    </div>
+
+    <div id="customizePanel" class="customize-panel">
+      <div class="input-group">
+        <label for="foregroundColor">Foreground Color</label>
+        <input type="text" id="foregroundColor" class="color-picker" value="#333333" />
+      </div>
+      <div class="input-group">
+        <label for="backgroundColor">Background Color</label>
+        <input type="text" id="backgroundColor" class="color-picker" value="#ffffff" />
+      </div>
+      <div class="input-group">
+        <label for="errorCorrection">Error Correction</label>
+        <select id="errorCorrection">
+          <option value="L">Low (7%)</option>
+          <option value="M" selected>Medium (15%)</option>
+          <option value="Q">Quartile (25%)</option>
+          <option value="H">High (30%)</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="qrSize">Size (px)</label>
+        <input type="range" id="qrSize" min="100" max="300" value="200" step="10" />
+        <span id="qrSizeValue">200px</span>
+      </div>
+      <div class="input-group">
+        <label for="logoUpload">Add Logo (Optional)</label>
+        <input type="file" id="logoUpload" accept="image/*" />
+      </div>
+      <div class="input-group">
+        <label for="tagsContainer">Tags</label>
+        <div id="tagsContainer" class="tag-container"></div>
+      </div>
+    </div>
+
+    <div class="preview-container">
+      <div class="preview-header">
+        <label>QR Code</label>
+      </div>
+      <div class="qr-code-container" id="qrCodeContainer">
+        <!-- QR code will be inserted here -->
+        <div class="empty-state">QR code will appear here</div>
+      </div>
+    </div>
+
+    <div class="button-group">
+      <button id="copyQRCode" class="primary-button" disabled>
+        <span class="material-icons">content_copy</span>
+        Copy
+      </button>
+      <button id="downloadQRCode" class="primary-button" disabled>
+        <span class="material-icons">download</span>
+        Download
+      </button>
+      <button id="saveLink" class="secondary-button">
+        <span class="material-icons">bookmark_add</span>
+        Save
+      </button>
+    </div>
+
+    <div id="downloadOptions" class="download-options">
+      <div class="download-option" data-format="png">
+        <span class="material-icons">image</span>
+        PNG
+      </div>
+      <div class="download-option" data-format="svg">
+        <span class="material-icons">draw</span>
+        SVG
+      </div>
+      <div class="download-option-sizes">
+        <div class="download-option-size" data-size="small">Small</div>
+        <div class="download-option-size active" data-size="medium">Medium</div>
+        <div class="download-option-size" data-size="large">Large</div>
+      </div>
+    </div>
+
+    <div class="saved-links-container">
+      <div class="saved-links-header">
+        <label>Saved QR Codes</label>
+        <div class="saved-links-actions">
+          <input type="text" id="searchSaved" placeholder="Search..." class="search-saved" />
+          <button id="clearSavedLinks" class="icon-button" title="Clear All Saved Links">
+            <span class="material-icons">delete_sweep</span>
+          </button>
+        </div>
+      </div>
+      <div id="savedLinksList" class="saved-links-list">
+        <!-- Saved links will be inserted here dynamically -->
+        <div class="empty-state">No saved QR codes yet</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="https://github.com/labrat-0" target="_blank" rel="noopener noreferrer" class="github-link">
+        <img src="github-mark.png" alt="GitHub" class="github-icon" />
+        @labrat-0
+      </a>
+    </div>
+  </div>
+  <div id="copySuccess" class="notification">Copied to clipboard!</div>
+  
+  <!-- Scripts -->
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/qrcode.min.js"></script>
+  <script src="lib/spectrum.min.js"></script>
+  
+  <!-- Only load svg-support.js after QRCode.js -->
+  <script>
+    // Ensure QRCode.js is loaded before loading svg-support.js
+    if (typeof QRCode !== 'undefined') {
+      const svgScript = document.createElement('script');
+      svgScript.src = 'svg-support.js';
+      svgScript.onerror = function() {
+        console.error('Failed to load svg-support.js');
+      };
+      document.body.appendChild(svgScript);
+    } else {
+      console.error('QRCode.js not loaded, skipping svg-support.js');
+    }
+  </script>
+  
+  <!-- Main application script -->
+  <script src="popup.js"></script>
+</body>
+</html>
