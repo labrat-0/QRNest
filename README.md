@@ -1,4 +1,4 @@
-# 🪹 QR Nest
+# 🐀 QR_Nest
 
 > 🚀 A modern, lightweight browser extension for creating, customizing, and managing QR codes.
 
