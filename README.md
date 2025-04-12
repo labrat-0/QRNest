@@ -69,8 +69,8 @@ QR Nest is built using:
 - 🎨 [Spectrum](https://bgrins.github.io/spectrum/) for color picker functionality
 - 🧩 Chrome/Firefox extension APIs
 
-## 📥 Installation  (Coming Soon! Will need to run in DEV MODE in browser for now --load package)
-
+## 📥 Installation
+## WebStore Download 🚨Coming Soon🚨
 ### 🔵 Chrome
 1. Download the extension files
 2. Open Chrome and navigate to `chrome://extensions/`
