@@ -6,7 +6,7 @@
 [![Firefox Add-ons](https://img.shields.io/badge/-Firefox%20Add--ons-FF7139?style=flat-square&logo=firefoxbrowser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/extensions/)
 
 <p align="center">
-  <img src="icon128.png" alt="QR Nest Logo" width="128" height="128">
+  <img src="https://github.com/labrat-0/QRNest/blob/main/QRNest/icon128.png" alt="QRNest Logo" width="128" height="128">
 </p>
 
 ## ✨ Features
@@ -69,7 +69,7 @@ QR Nest is built using:
 - 🎨 [Spectrum](https://bgrins.github.io/spectrum/) for color picker functionality
 - 🧩 Chrome/Firefox extension APIs
 
-## 📥 Installation
+## 📥 Installation  (Coming Soon! Will need to run in DEV MODE in browser for now --load package)
 
 ### 🔵 Chrome
 1. Download the extension files
