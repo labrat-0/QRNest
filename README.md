@@ -2,6 +2,9 @@
 
 > 🚀 A modern, lightweight browser extension for creating, customizing, and managing QR codes.
 
+
+# Coming soon to the following Web Stores➡️
+
 [![Chrome Web Store](https://img.shields.io/badge/-Chrome%20Web%20Store-4285F4?style=flat-square&logo=googlechrome&logoColor=white)](https://chrome.google.com/webstore/category/extensions)
 [![Firefox Add-ons](https://img.shields.io/badge/-Firefox%20Add--ons-FF7139?style=flat-square&logo=firefoxbrowser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/extensions/)
 
