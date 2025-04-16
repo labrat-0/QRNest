@@ -1,12 +1,18 @@
 # 🐀 QR_Nest
 
 > 🚀 A modern, lightweight browser extension for creating, customizing, and managing QR codes.
+>
 
+## 🌐 Available Web Stores
 
-# Coming soon to the following Web Stores➡️
+[![Edge Add-ons](https://img.shields.io/badge/Microsoft_Edge-Add--on-0078D7?style=flat-square&logo=microsoftedge&logoColor=white)](https://microsoftedge.microsoft.com/addons/)
 
-[![Chrome Web Store](https://img.shields.io/badge/-Chrome%20Web%20Store-4285F4?style=flat-square&logo=googlechrome&logoColor=white)](https://chrome.google.com/webstore/category/extensions)
-[![Firefox Add-ons](https://img.shields.io/badge/-Firefox%20Add--ons-FF7139?style=flat-square&logo=firefoxbrowser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/extensions/)
+---
+
+## ⏳ Coming Soon
+
+[![Firefox Add-ons](https://img.shields.io/badge/Firefox-Add--ons-FF7139?style=flat-square&logo=firefoxbrowser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/extensions/)
+[![Chrome Web Store](https://img.shields.io/badge/Google_Chrome-Web_Store-4285F4?style=flat-square&logo=googlechrome&logoColor=white)](https://chrome.google.com/webstore/category/extensions)
 
 <p align="center">
   <img src="https://github.com/labrat-0/QRNest/blob/main/QRNest/icon128.png" alt="QRNest Logo" width="128" height="128">
