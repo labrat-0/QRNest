@@ -38,7 +38,7 @@
 ### 🌐 Browser Integration
 - 🖱️ Right-click context menu to generate QR for any link
 - ✂️ Right-click to create QR code from selected text
-- ⌨️ Keyboard shortcut (Ctrl+Shift+Q) to generate QR for current page
+
 
 ### 📚 Organization
 - 🖼️ Save QR codes with thumbnails for quick reference
@@ -57,7 +57,7 @@
 7. 💾 Optionally save QR codes for later use with "Save"
 
 ### ⌨️ Keyboard Shortcut
-- Press `Ctrl+Shift+Q` (or `Cmd+Shift+Q` on Mac) to generate a QR code for the current page
+- Depends on current user settings, but should be Ctrl + Shift + Q
 
 ### 🖱️ Context Menu
 - Right-click on any link and select "Generate QR code for this link"
