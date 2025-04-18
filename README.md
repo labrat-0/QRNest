@@ -3,20 +3,22 @@
 > 🚀 A modern, lightweight browser extension for creating, customizing, and managing QR codes.
 >
 
+<p align="center">
+  <img src="https://github.com/labrat-0/QRNest/blob/main/QRNest/icon128.png" alt="QRNest Logo" width="128" height="128">
+</p>
+
+
 ## 🌐 Available Web Stores
 
-[![Edge Add-ons](https://img.shields.io/badge/Microsoft_Edge-Add--on-0078D7?style=flat-square&logo=microsoftedge&logoColor=white)](https://microsoftedge.microsoft.com/addons/)
+[![Chromium Web Store](https://img.shields.io/badge/Chromium-Web_Store-4285F4?style=flat-square&logo=googlechrome&logoColor=white)](https://chrome.google.com/webstore/category/extensions)
+
 
 ---
 
 ## ⏳ Coming Soon
 
 [![Firefox Add-ons](https://img.shields.io/badge/Firefox-Add--ons-FF7139?style=flat-square&logo=firefoxbrowser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/extensions/)
-[![Chrome Web Store](https://img.shields.io/badge/Google_Chrome-Web_Store-4285F4?style=flat-square&logo=googlechrome&logoColor=white)](https://chrome.google.com/webstore/category/extensions)
 
-<p align="center">
-  <img src="https://github.com/labrat-0/QRNest/blob/main/QRNest/icon128.png" alt="QRNest Logo" width="128" height="128">
-</p>
 
 ## ✨ Features
 
@@ -32,7 +34,7 @@
 - 🖌️ Choose foreground and background colors
 - 🛡️ Adjust QR code error correction level
 - 📏 Customize QR code size
-- 🖼️ Add logo/image overlay to QR codes
+- 🖼️ Add logo/image overlay to QR codes 🚧**WiP**🚧
 - 🌙 Dark mode support
 
 ### 📤 Export & Sharing
@@ -47,9 +49,7 @@
 
 
 ### 📚 Organization
-- 🖼️ Save QR codes with thumbnails for quick reference
 - 🏷️ Categorize with tags for easy organization
-- 🔍 Search through saved QR codes by content, type, or tags
 - 🔄 Drag and drop to reorder saved QR codes
 
 ## 🚀 Usage
@@ -70,6 +70,18 @@
 - Right-click on a page and select "Generate QR code for this page"
 - Select text, right-click, and select "Generate QR code for selected text"
 
+## 🚧 Known Limitations & Work in Progress
+
+- 🖼️ **Save QR codes with thumbnails for quick reference**  
+  ⚠️ *Currently, thumbnails are not preserved after reloading the extension.*
+
+- 🔍 **Search through saved QR codes by content, type, or tags**  
+  ⚠️ *Tag-based search is still under development and may not function as expected.*
+
+> We're actively working on improving these features. Stay tuned for updates!
+
+
+
 ## 💻 Development
 
 QR Nest is built using:
@@ -79,17 +91,28 @@ QR Nest is built using:
 - 🧩 Chrome/Firefox extension APIs
 
 ## 📥 Installation
-## WebStore Download 🚨Coming Soon🚨
-### 🔵 Chrome
-1. Download the extension files
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode" in the top right
-4. Click "Load unpacked" and select the QR Nest directory
+### 🔵💻 Chrome (Google Chrome)
 
-### 🔶 Firefox
-1. Download the extension files
-2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
-3. Click "Load Temporary Add-on" and select any file in the QR Nest directory
+1. 📥 **Download** the extension files (e.g., from GitHub)
+2. 🌐 Open Chrome and go to `chrome://extensions/`
+3. ⚙️ Enable **Developer mode** (top-right corner)
+4. 📂 Click **"Load unpacked"**
+5. 📁 Select the extension folder (e.g., `QR Nest`)
+
+---
+
+### 🟣🧭 Edge (Microsoft Edge)
+
+1. 📥 **Download** the extension files  
+2. 🌐 Open Edge and go to `edge://extensions/`
+3. ⚙️ Enable **Developer mode** (bottom-left corner)
+4. 📂 Click **"Load unpacked"**
+5. 📁 Select the extension folder (same as Chrome)
+
+---
+
+### 🧩💡 Tip: One Extension, Two Browsers  
+Both **Chrome** and **Edge** are built on **Chromium**, so you can use the **same extension files** in either browser. Choose whichever one you like — setup is identical!
 
 ## 📝 Feedback & Support
 
