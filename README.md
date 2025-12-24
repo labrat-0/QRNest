@@ -2,6 +2,8 @@
 
 > 🚀 A modern, lightweight browser extension for creating, customizing, and managing QR codes.
 >
+# VIBE CODED with CURSOR fyi
+>
 
 <p align="center">
   <img src="https://github.com/labrat-0/QRNest/blob/main/QRNest/icon128.png" alt="QRNest Logo" width="128" height="128">
